@@ -11,6 +11,7 @@
     "publish": "electron-forge publish",
     "lint": "eslint --ext .ts,.tsx ."
   },
+  "repository": "https://github.com/andresesaldar/POC_electron_auto_update",
   "keywords": [],
   "author": {
     "name": "Andres Saldarriaga",
@@ -46,6 +47,7 @@
   "dependencies": {
     "electron-squirrel-startup": "^1.0.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "update-electron-app": "^2.0.1"
   }
 }
