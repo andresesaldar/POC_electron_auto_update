@@ -39,6 +39,7 @@ const config: ForgeConfig = {
           name: 'POC_electron_auto_update'
         },
         prerelease: false,
+        draft: false,
       }
     }
   ]
