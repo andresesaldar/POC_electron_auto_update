@@ -4,7 +4,7 @@ import Counter from './Counter';
 
 const App: FC = () => (
     <>
-        <h1>Auto update poc</h1>
+        <h1>Auto update poc. Updated 🙌</h1>
         <Counter/>
     </>
 )
