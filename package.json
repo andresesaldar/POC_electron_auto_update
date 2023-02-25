@@ -1,7 +1,7 @@
 {
   "name": "auto-update-poc",
   "productName": "auto-update-poc",
-  "version": "1.0.0",
+  "version": "1.0.9",
   "description": "My Electron application description",
   "main": ".webpack/main",
   "scripts": {
@@ -11,6 +11,7 @@
     "publish": "electron-forge publish",
     "lint": "eslint --ext .ts,.tsx ."
   },
+  "repository": "https://github.com/andresesaldar/POC_electron_auto_update",
   "keywords": [],
   "author": {
     "name": "Andres Saldarriaga",
@@ -24,6 +25,7 @@
     "@electron-forge/maker-squirrel": "^6.0.5",
     "@electron-forge/maker-zip": "^6.0.5",
     "@electron-forge/plugin-webpack": "^6.0.5",
+    "@electron-forge/publisher-github": "^6.0.5",
     "@types/node": "^18.14.1",
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.11",
@@ -45,6 +47,7 @@
   "dependencies": {
     "electron-squirrel-startup": "^1.0.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "update-electron-app": "^2.0.1"
   }
 }

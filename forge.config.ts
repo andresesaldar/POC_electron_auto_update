@@ -30,6 +30,18 @@ const config: ForgeConfig = {
       },
     }),
   ],
+  publishers: [
+    {
+      name: '@electron-forge/publisher-github',
+      config: {
+        repository: {
+          owner: 'andresesaldar',
+          name: 'POC_electron_auto_update'
+        },
+        prerelease: false,
+      }
+    }
+  ]
 };
 
 export default config;
