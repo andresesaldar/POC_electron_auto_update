@@ -1,0 +1,9 @@
+version: '3'
+services:
+  nucleus-server:
+    image: atlassian/nucleus:latest
+    container_name: nucleus-server
+    ports:
+      - "3030:3030"
+    volumes:
+      - "./nucleus/config.js:/opt/service/config.js:ro"

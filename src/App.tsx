@@ -6,6 +6,9 @@ const App: FC = () => (
     <>
         <h1>Auto update poc. Updated 🙌</h1>
         <Counter/>
+        <div style={{paddingTop: "20px"}}>
+            <b>Updated again 15.</b>
+        </div>
     </>
 )
 

@@ -32,14 +32,12 @@ const config: ForgeConfig = {
   ],
   publishers: [
     {
-      name: '@electron-forge/publisher-github',
+      name: '@electron-forge/publisher-nucleus',
       config: {
-        repository: {
-          owner: 'andresesaldar',
-          name: 'POC_electron_auto_update'
-        },
-        prerelease: false,
-        draft: false,
+        host: 'http://localhost:3030',
+        appId: '1',
+        channelId: '7ad035c6c2f4956c572d45df1c44f552',
+        token: process.env.NUCLEUS_TOKEN || (() => {throw new Error("Missing required NUCLEUS_TOKEN")})()
       }
     }
   ]

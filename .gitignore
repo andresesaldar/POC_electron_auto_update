@@ -87,3 +87,7 @@ typings/
 
 # Electron-Forge
 out/
+
+# Nucleus local config
+nucleus/
+electron-icon.png
