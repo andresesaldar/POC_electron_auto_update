@@ -7,8 +7,10 @@ const App: FC = () => (
         <h1>Auto update poc. Updated 🙌</h1>
         <Counter/>
         <div style={{paddingTop: "20px"}}>
-            <b>Updated again 15.</b>
+            <b>Updated again 17.</b>
         </div>
+        <br/>
+        <button onClick={() => alert("AMAZING!")}>CLick this if u think auto update is AMAZING!</button>
     </>
 )
 

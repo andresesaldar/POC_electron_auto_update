@@ -1,7 +1,7 @@
 {
   "name": "auto-update-poc",
   "productName": "auto-update-poc",
-  "version": "1.0.15",
+  "version": "1.0.17",
   "description": "My Electron application description",
   "main": ".webpack/main",
   "scripts": {

@@ -34,9 +34,9 @@ const config: ForgeConfig = {
     {
       name: '@electron-forge/publisher-nucleus',
       config: {
-        host: 'http://localhost:3030',
+        host: 'http://localhost:8080',
         appId: '1',
-        channelId: '7ad035c6c2f4956c572d45df1c44f552',
+        channelId: '25e0a9ff52fd713f743925b2d1c07fc2',
         token: process.env.NUCLEUS_TOKEN || (() => {throw new Error("Missing required NUCLEUS_TOKEN")})()
       }
     }

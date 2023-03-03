@@ -63,10 +63,10 @@ app.on('activate', () => {
 
 // In this file you can include the rest of your app's specific main process
 // code. You can also put them in separate files and import them here.
-const DOMAIN = 'http://localhost:9999';
+const DOMAIN = 'http://localhost:8181';
 const suffix = process.platform === 'darwin' ? `/RELEASES.json?method=JSON&version=${app.getVersion()}` : '';
 autoUpdater.setFeedURL({
-  url: `${DOMAIN}/Auto-Update-POC/7ad035c6c2f4956c572d45df1c44f552/${process.platform}/${process.arch}${suffix}`,
+  url: `${DOMAIN}/Auto-Update-POC/25e0a9ff52fd713f743925b2d1c07fc2/${process.platform}/${process.arch}${suffix}`,
   serverType: 'json',
 });
 
