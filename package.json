@@ -1,7 +1,7 @@
 {
   "name": "auto-update-poc",
   "productName": "auto-update-poc",
-  "version": "1.0.17",
+  "version": "1.0.26",
   "description": "My Electron application description",
   "main": ".webpack/main",
   "scripts": {
@@ -25,7 +25,7 @@
     "@electron-forge/maker-squirrel": "^6.0.5",
     "@electron-forge/maker-zip": "^6.0.5",
     "@electron-forge/plugin-webpack": "^6.0.5",
-    "@electron-forge/publisher-nucleus": "^6.0.5",
+    "@electron-forge/publisher-electron-release-server": "^6.0.5",
     "@types/node": "^18.14.1",
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.11",

@@ -180,15 +180,16 @@
   dependencies:
     "@electron-forge/shared-types" "6.0.5"
 
-"@electron-forge/publisher-nucleus@^6.0.5":
+"@electron-forge/publisher-electron-release-server@^6.0.5":
   version "6.0.5"
-  resolved "https://registry.yarnpkg.com/@electron-forge/publisher-nucleus/-/publisher-nucleus-6.0.5.tgz#f1af407d9a9d5835dc9a06dd3b460fb1016ef992"
-  integrity sha512-GCkbAIxow6MzR+HWuUrL92jNcvaPw/gYjBpQ+FqUjKJ+AkZD6kk0AUvA+N/bOqKbtdDFi60ZTTAsMfHzxU121w==
+  resolved "https://registry.yarnpkg.com/@electron-forge/publisher-electron-release-server/-/publisher-electron-release-server-6.0.5.tgz#18da89d3c83ccf4d5e743772c25282ebe2034075"
+  integrity sha512-sfJj1Ro+tLb9VCVogXSzv6jkYKdlMDBPlJrXkM678ahp8KZxkF5RuUeQPkhaqJl7wbmfoIDnF/jNtiNzMfNT+A==
   dependencies:
     "@electron-forge/publisher-base" "6.0.5"
     "@electron-forge/shared-types" "6.0.5"
     debug "^4.3.1"
     form-data "^4.0.0"
+    fs-extra "^10.0.0"
     node-fetch "^2.6.7"
 
 "@electron-forge/shared-types@6.0.5":

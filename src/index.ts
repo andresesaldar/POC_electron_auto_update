@@ -63,16 +63,21 @@ app.on('activate', () => {
 
 // In this file you can include the rest of your app's specific main process
 // code. You can also put them in separate files and import them here.
-const DOMAIN = 'http://localhost:8181';
-const suffix = process.platform === 'darwin' ? `/RELEASES.json?method=JSON&version=${app.getVersion()}` : '';
+const DOMAIN = 'http://localhost:8080';
+const FLAVOR = 'default';
+const CHANNEL = 'stable';
+const PLATFORM = process.arch === "x64" && process.platform === "win32" ? "win64" : process.platform
+
 autoUpdater.setFeedURL({
-  url: `${DOMAIN}/Auto-Update-POC/25e0a9ff52fd713f743925b2d1c07fc2/${process.platform}/${process.arch}${suffix}`,
-  serverType: 'json',
+  url: `${DOMAIN}/update/flavor/${FLAVOR}/${PLATFORM}/${app.getVersion()}/${CHANNEL}`,
+  serverType: 'default',
 });
 
-setInterval(() => {
-  autoUpdater.checkForUpdates()
-}, 60000)
+if(app.isPackaged) {
+  setInterval(() => {
+    autoUpdater.checkForUpdates()
+  }, 60000)
+}
 
 autoUpdater.on('update-downloaded', (_event, releaseNotes, releaseName) => {
   const dialogOpts = {

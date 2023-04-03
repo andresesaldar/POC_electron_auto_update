@@ -32,12 +32,11 @@ const config: ForgeConfig = {
   ],
   publishers: [
     {
-      name: '@electron-forge/publisher-nucleus',
+      name: '@electron-forge/publisher-electron-release-server',
       config: {
-        host: 'http://localhost:8080',
-        appId: '1',
-        channelId: '25e0a9ff52fd713f743925b2d1c07fc2',
-        token: process.env.NUCLEUS_TOKEN || (() => {throw new Error("Missing required NUCLEUS_TOKEN")})()
+        baseUrl: 'http://localhost:8080',
+        username: 'notifyrelease',
+        password: process.env.PASSWORD
       }
     }
   ]
